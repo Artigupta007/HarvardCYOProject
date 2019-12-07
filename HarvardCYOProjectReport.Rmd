@@ -1,0 +1,104 @@
+---
+title: "Capstone CYO Project Report"
+subtitle: "Predictiton of Credit Risk for German Bank"
+author: "Endri Raco"
+output:
+  pdf_document:
+    df_print: kable
+    toc: yes
+documentclass: report
+classoption: a4paper
+fig_height: 5
+fig_width: 5
+fontsize: 10pt
+highlight: zenburn
+latex_engine: xelatex
+mainfont: Arial
+mathfont: LiberationMono
+monofont: DejaVu Sans Mono
+urlcolor: blue
+references:
+- id: investopedia2019
+  title: What Is Credit Risk?
+  author:
+  - family: Investopedia
+  URL: 'https://www.investopedia.com/terms/c/creditrisk.asp'
+  publisher: Investopedia
+  type: article-journal
+  issued:
+    year: 2019
+    month: 5
+---
+
+```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
+## specify the packages needed
+if(!require(kableExtra)) install.packages('kableExtra', 
+repos = 'http://cran.us.r-project.org')
+if(!require(dataCompareR)) install.packages('dataCompareR', 
+repos = 'http://cran.us.r-project.org')
+if(!require(tidyverse)) install.packages('tidyverse', 
+repos = 'http://cran.us.r-project.org')
+if(!require(caret)) install.packages('caret', 
+repos = 'http://cran.us.r-project.org')
+if(!require(data.table)) install.packages('data.table', 
+repos = 'http://cran.us.r-project.org')
+
+
+## specify global chunk options
+knitr::opts_chunk$set(fig.width = 5, fig.height = 4, dpi = 300,
+                      out.width = "90%", fig.align = "center")
+
+```
+
+## Dedication
+
+This project and all my work is dedicated to victims of Albanian earthquake 26 November 2019.
+
+
+## Acknowledgement
+
+I would like to express my special thanks of gratitude to Prof. Rafael Irizarry for the wonderful material and thorough explanations he provided during all courses. Also I want to thank my friends of this course who share the same interests for Data Science. 
+
+
+
+## Introduction
+
+Investopedia webpage defines **Credit risk** as the possibility of a loss resulting from a borrower's failure to repay a loan or meet contractual obligations.[@investopedia2019]
+
+By this definition, we understand that subject who gives the loan (in our case the bank) takes a risk during this process, because it is not known  a priori if client who applies and takes the loan will not default (fail to return the money). 
+
+Nowadays, banks and other financial institutions are taking advantange of machine learning methods to predict credit risks (refuse loans to risky customers).  The aim of this project is to use machine learning techniques for building a predictive model based on bank client's features. This model should help on understanding which client can be considered as a risky one.
+
+We will use dataset [German Credit Risk](https://www.kaggle.com/uciml/german-credit) from Kaggle portal prepared by Professor Dr. Hans Hofmann, University of Hamburg.  
+
+In this dataset, each entry represents a person who takes a credit by a bank. Each person is classified as good or bad credit risks according to the set of attributes.
+
+For all project calculations is used the following PC:
+
+```{r pc}
+print("Operating System:")
+version
+```
+
+&nbsp;
+
+
+
+
+
+## Methods and Analysis
+## Importing data
+## Describing Data
+## Data Wrangling
+## Exploring Data
+## Building models
+## Results
+## Conclusions
+## References
+
+
+
+
+
+
+
